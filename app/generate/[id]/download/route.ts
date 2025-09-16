@@ -39,7 +39,7 @@ export async function GET(
       // Ensure we have a regular Buffer, not SharedArrayBuffer
       const regularBuffer = Buffer.from(buffer);
 
-      return new NextResponse(regularBuffer, {
+      return new NextResponse(regularBuffer as unknown as BodyInit, {
         headers: {
           'Content-Type': 'image/png',
           'Content-Disposition': `attachment; filename="qr-code-${id}.png"`,
