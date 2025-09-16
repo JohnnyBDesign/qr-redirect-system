@@ -36,10 +36,10 @@ export async function GET(
         errorCorrectionLevel: 'H',
       });
 
-      // Convert Buffer to Uint8Array to ensure compatibility
-      const uint8Array = new Uint8Array(buffer);
+      // Ensure we have a regular Buffer, not SharedArrayBuffer
+      const regularBuffer = Buffer.from(buffer);
 
-      return new NextResponse(uint8Array, {
+      return new NextResponse(regularBuffer, {
         headers: {
           'Content-Type': 'image/png',
           'Content-Disposition': `attachment; filename="qr-code-${id}.png"`,
