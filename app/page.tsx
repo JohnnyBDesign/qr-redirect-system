@@ -14,6 +14,14 @@ export default async function Home() {
           <p className="text-lg text-gray-600">
             Manage your chair product QR codes and their destinations
           </p>
+          <div className="mt-4">
+            <Link 
+              href="/admin"
+              className="inline-flex items-center px-4 py-2 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition-colors"
+            >
+              Admin Panel →
+            </Link>
+          </div>
         </div>
 
         <div className="bg-white shadow rounded-lg p-6">

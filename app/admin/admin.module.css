@@ -1,0 +1,135 @@
+.container {
+  padding: 40px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.backLink {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.addSection {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+}
+
+.inputRow {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.inputSmall {
+  width: 150px;
+}
+
+.inputLarge {
+  width: 400px;
+}
+
+.button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.nextId {
+  margin-left: 10px;
+  color: #666;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table th {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 2px solid #ddd;
+}
+
+.table td {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.actionButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.linkButton {
+  color: #4F46E5;
+}
+
+.editButton {
+  color: #FF9800;
+}
+
+.deleteButton {
+  color: #F44336;
+}
+
+.saveButton {
+  color: #4CAF50;
+}
+
+.cancelButton {
+  color: #666;
+}
+
+.instructionsBox {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #FFF3CD;
+  border-radius: 8px;
+  border: 1px solid #FCE4A3;
+}
+
+.workflowBox {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #E8F5E9;
+  border-radius: 8px;
+  border: 1px solid #A5D6A7;
+}
+
+.codeBlock {
+  background-color: #f5f5f5;
+  padding: 15px;
+  border-radius: 5px;
+  overflow: auto;
+  margin-top: 10px;
+}
+
+.code {
+  background-color: #e8e8e8;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: monospace;
+}
