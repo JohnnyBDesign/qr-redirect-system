@@ -195,7 +195,7 @@ export default function AdminPage() {
         </pre>
       </div>
 
-      <div style={{ marginTop: '40px', padding: '20px', backgroundColor: '#E8F5E9', borderRadius: '8px', border: '1px solid '#A5D6A7' }}>
+      <div style={{ marginTop: '40px', padding: '20px', backgroundColor: '#E8F5E9', borderRadius: '8px', border: '1px solid #A5D6A7' }}>
         <h3 style={{ marginBottom: '10px' }}>🔄 PDF Update Workflow:</h3>
         <ol style={{ marginLeft: '20px' }}>
           <li>Upload new PDF to <code>public/pdfs/</code> directory</li>
