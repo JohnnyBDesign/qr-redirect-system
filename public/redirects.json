@@ -2,5 +2,6 @@
   "001": "/api/pdf/chair001-manual.pdf",
   "002": "/api/pdf/chair002-manual.pdf",
   "003": "https://mydomain.com/product/office-chair-deluxe",
-  "004": "/api/pdf/assembly-guide.pdf"
+  "004": "/api/pdf/assembly-guide.pdf",
+  "005": "/api/pdf/48HR_Brochure.pdf"
 }

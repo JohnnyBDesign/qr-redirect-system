@@ -25,7 +25,7 @@ export async function GET(
     
     const file = await readFile(normalizedPath);
     
-    return new NextResponse(file, {
+    return new NextResponse(file as unknown as BodyInit, {
       headers: {
         'Content-Type': 'application/pdf',
         'Content-Disposition': `inline; filename="${path.basename(filePath)}"`,
