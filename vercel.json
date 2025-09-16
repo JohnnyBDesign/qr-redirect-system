@@ -1,0 +1,21 @@
+{
+  "functions": {
+    "app/tag/[id]/route.ts": {
+      "maxDuration": 10
+    },
+    "app/generate/[id]/download/route.ts": {
+      "maxDuration": 10
+    }
+  },
+  "headers": [
+    {
+      "source": "/redirects.json",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "s-maxage=60, stale-while-revalidate"
+        }
+      ]
+    }
+  ]
+}
