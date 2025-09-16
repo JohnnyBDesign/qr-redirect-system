@@ -36,12 +36,10 @@ export async function GET(
         errorCorrectionLevel: 'H',
       });
 
-      const arrayBuffer = buffer.buffer.slice(
-        buffer.byteOffset,
-        buffer.byteOffset + buffer.byteLength
-      );
+      // Convert Buffer to Uint8Array to ensure compatibility
+      const uint8Array = new Uint8Array(buffer);
 
-      return new NextResponse(arrayBuffer, {
+      return new NextResponse(uint8Array, {
         headers: {
           'Content-Type': 'image/png',
           'Content-Disposition': `attachment; filename="qr-code-${id}.png"`,
